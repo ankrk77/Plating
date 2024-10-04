@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #002366; /* Dark Blue */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffc107; /* Bright Yellow */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #4da8da; /* Light Blue */
+}
+
+/* Section */
+section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #002366; /* Dark Blue */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* About Section with Image Animation */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.land-dealer {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.land-dealer:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Properties Section with Image Animation */
+.properties-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.property:hover {
+    transform: translateY(-10px); /* Lifts image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #002366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4da8da; /* Light Blue */
+}
+
+/* Footer */
+footer {
+    background: #002366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .properties-gallery {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #4da8da; /* Light Blue */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #ffc107; /* Bright Yellow */
+}
